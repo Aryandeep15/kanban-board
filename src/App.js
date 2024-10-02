@@ -20,11 +20,11 @@ function App() {
   };
 
   const priorityIcons = {
-    0: "/icons_FEtask/No-priority.svg",
-    1: "/icons_FEtask/SVG - Urgent Priority colour.svg",
-    2: "/icons_FEtask/Img - High Priority.svg",
-    3: "/icons_FEtask/Img - Medium Priority.svg",
-    4: "/icons_FEtask/Img - Low Priority.svg",
+    0: `${process.env.PUBLIC_URL}/icons_FEtask/No-priority.svg`,
+    1: `${process.env.PUBLIC_URL}/icons_FEtask/SVG - Urgent Priority colour.svg`,
+    2: `${process.env.PUBLIC_URL}/icons_FEtask/Img - High Priority.svg`,
+    3: `${process.env.PUBLIC_URL}/icons_FEtask/Img - Medium Priority.svg`,
+    4: `${process.env.PUBLIC_URL}/icons_FEtask/Img - Low Priority.svg`,
   };
 
   // Define the status labels and icons
@@ -37,11 +37,11 @@ function App() {
   };
 
   const statusIcons = {
-    'todo': "/icons_FEtask/To-do.svg",
-    'in-progress': "/icons_FEtask/in-progress.svg",
-    'backlog': "/icons_FEtask/Backlog.svg",
-    'done': "/icons_FEtask/Done.svg",
-    'cancelled': "/icons_FEtask/Cancelled.svg"
+    'todo': `${process.env.PUBLIC_URL}/icons_FEtask/To-do.svg`,
+    'in-progress': `${process.env.PUBLIC_URL}/icons_FEtask/in-progress.svg`,
+    'backlog': `${process.env.PUBLIC_URL}/icons_FEtask/Backlog.svg`,
+    'done': `${process.env.PUBLIC_URL}/icons_FEtask/Done.svg`,
+    'cancelled': `${process.env.PUBLIC_URL}/icons_FEtask/Cancelled.svg`
   };
 
   // Define all the possible statuses
@@ -160,7 +160,7 @@ function App() {
       <div className="navbar">
         <div className="nav-left">
           <button className="display-btn" onClick={() => setDropdownOpen(!isDropdownOpen)}>
-            <img src="/icons_FEtask/Display.svg" alt="Display" /> Display
+            <img src={`${process.env.PUBLIC_URL}/icons_FEtask/Display.svg`} alt="Display" /> Display
           </button>
           {isDropdownOpen && (
             <div className="dropdown">
@@ -184,7 +184,7 @@ function App() {
         </div>
         {/* Add button with icon */}
         <div className="nav-right">
-          <img src="/icons_FEtask/add.svg" alt="Add" />
+          <img src={`${process.env.PUBLIC_URL}/icons_FEtask/add.svg`} alt="Add" />
         </div>
       </div>
 
